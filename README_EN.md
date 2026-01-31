@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/images/logo.png" alt="SlideFlow AI Logo" width="600"/>
+<img src="docs/images/logo.png" alt="SlideBot AI Logo" width="600"/>
 
-# SlideFlow AI 2.0
+# SlideBot AI 2.0
 
 ### AI-Powered Presentation Generator
 
@@ -103,7 +103,7 @@ We have deployed an online demo version for you to try!
 ### Login Page
 
 <div align="center">
-<img src="docs/images/login.png" alt="SlideFlow AI Login" width="800"/>
+<img src="docs/images/login.png" alt="SlideBot AI Login" width="800"/>
 
 *Clean and elegant login interface with invite code verification*
 </div>
@@ -111,7 +111,7 @@ We have deployed an online demo version for you to try!
 ### Workbench
 
 <div align="center">
-<img src="docs/images/workbench.png" alt="SlideFlow AI Workbench" width="800"/>
+<img src="docs/images/workbench.png" alt="SlideBot AI Workbench" width="800"/>
 
 *Feature-rich workbench: style selection, content richness adjustment, voice transcription*
 </div>
@@ -257,8 +257,8 @@ We have deployed an online demo version for you to try!
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/tonyqinatcmu/SlideFlow.AI.git
-cd SlideFlow.AI
+git clone https://github.com/tonyqinatcmu/SlideBot.AI.git
+cd SlideBot.AI
 
 # 2. Install backend dependencies
 pip install -r requirements.txt
@@ -310,7 +310,7 @@ HOST=0.0.0.0
 ## 📁 Project Structure
 
 ```
-slideflow/
+slidebot/
 ├── server.py              # Backend main program (FastAPI routes)
 ├── requirements.txt       # Python dependencies
 ├── .env.example           # Environment variables example
@@ -445,7 +445,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 If this project helps you, please give us a Star ⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideFlow.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideFlow.AI&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideBot.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideBot.AI&Date)
 
 ---
 
@@ -479,6 +479,6 @@ Feel free to reach out to discuss AI, product design, startups, and more!
 
 **Made with ❤️**
 
-[Report Bug](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [Request Feature](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [Discussions](https://github.com/tonyqinatcmu/SlideFlow.AI/discussions)
+[Report Bug](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [Request Feature](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [Discussions](https://github.com/tonyqinatcmu/SlideBot.AI/discussions)
 
 </div>

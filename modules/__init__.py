@@ -1,5 +1,5 @@
 """
-SlideFlow 模块包
+SlideBot 模块包
 
 包含以下模块：
 - config: 配置常量

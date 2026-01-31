@@ -367,7 +367,7 @@ const StyleCard = ({ preset, presetKey, isSelected, onClick, onEditPrompt }) => 
 };
 
 // ============ 主应用组件 ============
-function SlideFlowApp({ onLogout, isDark, onThemeToggle }) {
+function SlideBotApp({ onLogout, isDark, onThemeToggle }) {
   const theme = useTheme();
   const [sessionId] = useState(generateSessionId);
   const [stage, setStage] = useState(STAGES.INPUT);
@@ -1462,7 +1462,7 @@ function SlideFlowApp({ onLogout, isDark, onThemeToggle }) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: '20px' }}>
         <div style={{ animation: 'float 3s ease-in-out infinite' }}><Logo size={100} /></div>
-        <div style={{ fontSize: '28px', fontWeight: 800 }}><span style={{ color: theme.text }}>SlideFlow</span><span style={{ color: theme.accent }}> AI</span><span style={{ fontSize: '12px', marginLeft: '8px', padding: '3px 8px', background: theme.accent, color: '#fff', borderRadius: '6px', verticalAlign: 'middle' }}>2.0 Beta</span></div>
+        <div style={{ fontSize: '28px', fontWeight: 800 }}><span style={{ color: theme.text }}>SlideBot</span><span style={{ color: theme.accent }}> AI</span><span style={{ fontSize: '12px', marginLeft: '8px', padding: '3px 8px', background: theme.accent, color: '#fff', borderRadius: '6px', verticalAlign: 'middle' }}>2.0 Beta</span></div>
         <div style={{ fontSize: '14px', color: theme.textMuted }}>输入您的想法，AI 将为您生成专业 PPT</div>
       </div>
     );
@@ -1571,7 +1571,7 @@ function SlideFlowApp({ onLogout, isDark, onThemeToggle }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
             <Logo size={36} />
             <div>
-              <div style={{ fontSize: '18px', fontWeight: 800 }}><span style={{ color: theme.primary }}>SlideFlow</span><span style={{ color: theme.accent }}> AI</span><span style={{ fontSize: '10px', marginLeft: '6px', padding: '2px 6px', background: theme.accent, color: '#fff', borderRadius: '4px', verticalAlign: 'middle' }}>2.0 Beta</span></div>
+              <div style={{ fontSize: '18px', fontWeight: 800 }}><span style={{ color: theme.primary }}>SlideBot</span><span style={{ color: theme.accent }}> AI</span><span style={{ fontSize: '10px', marginLeft: '6px', padding: '2px 6px', background: theme.accent, color: '#fff', borderRadius: '4px', verticalAlign: 'middle' }}>2.0 Beta</span></div>
               <div style={{ fontSize: '11px', color: theme.textMuted }}>智能演示文稿生成平台</div>
             </div>
           </div>
@@ -2256,7 +2256,7 @@ function LoginPage({ onLoginSuccess, isDark, onThemeToggle }) {
       const result = await api.login(inviteCode);
       if (result.success) {
         setSuccess(true);
-        localStorage.setItem('slideflow_logged_in', 'true');
+        localStorage.setItem('slidebot_logged_in', 'true');
         setTimeout(() => onLoginSuccess(), 800);
       } else setError(result.message || '邀请码无效');
     } catch { setError('网络错误，请重试'); } finally { setIsLoading(false); }
@@ -2273,7 +2273,7 @@ function LoginPage({ onLoginSuccess, isDark, onThemeToggle }) {
           <h1 style={{ fontSize: '56px', fontWeight: 900, marginTop: '32px', marginBottom: '16px', minHeight: '70px' }}>
             <span style={{ color: theme.text }}>
               <TypewriterText 
-                texts={['SlideFlow AI 2.0', 'AI 智能 PPT', '一键生成演示']} 
+                texts={['SlideBot AI 2.0', 'AI 智能 PPT', '一键生成演示']} 
                 typingSpeed={120} 
                 deleteSpeed={60} 
                 pauseDuration={2500} 
@@ -2337,21 +2337,21 @@ function LoginPage({ onLoginSuccess, isDark, onThemeToggle }) {
 
 // ============ 主App ============
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(() => localStorage.getItem('slideflow_logged_in') === 'true');
+  const [isLoggedIn, setIsLoggedIn] = useState(() => localStorage.getItem('slidebot_logged_in') === 'true');
   const [isDark, setIsDark] = useState(() => {
-    const saved = localStorage.getItem('slideflow_theme');
+    const saved = localStorage.getItem('slidebot_theme');
     return saved ? saved === 'dark' : true;
   });
 
   const theme = isDark ? themes.dark : themes.light;
-  const handleThemeToggle = () => { const next = !isDark; setIsDark(next); localStorage.setItem('slideflow_theme', next ? 'dark' : 'light'); };
+  const handleThemeToggle = () => { const next = !isDark; setIsDark(next); localStorage.setItem('slidebot_theme', next ? 'dark' : 'light'); };
   const handleLogin = () => setIsLoggedIn(true);
-  const handleLogout = () => { localStorage.removeItem('slideflow_logged_in'); setIsLoggedIn(false); };
+  const handleLogout = () => { localStorage.removeItem('slidebot_logged_in'); setIsLoggedIn(false); };
 
   return (
     <ThemeContext.Provider value={theme}>
       <GlobalStyles theme={theme} />
-      {isLoggedIn ? <SlideFlowApp onLogout={handleLogout} isDark={isDark} onThemeToggle={handleThemeToggle} /> : <LoginPage onLoginSuccess={handleLogin} isDark={isDark} onThemeToggle={handleThemeToggle} />}
+      {isLoggedIn ? <SlideBotApp onLogout={handleLogout} isDark={isDark} onThemeToggle={handleThemeToggle} /> : <LoginPage onLoginSuccess={handleLogin} isDark={isDark} onThemeToggle={handleThemeToggle} />}
     </ThemeContext.Provider>
   );
 }

@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/images/logo.png" alt="SlideFlow AI Logo" width="600"/>
+<img src="docs/images/logo.png" alt="SlideBot AI Logo" width="600"/>
 
-# SlideFlow AI 2.0
+# SlideBot AI 2.0
 
 ### 智能演示文稿生成平台
 
@@ -103,7 +103,7 @@
 ### 登录界面
 
 <div align="center">
-<img src="docs/images/login.png" alt="SlideFlow AI 登录界面" width="800"/>
+<img src="docs/images/login.png" alt="SlideBot AI 登录界面" width="800"/>
 
 *简洁优雅的登录界面，支持邀请码验证*
 </div>
@@ -111,7 +111,7 @@
 ### 工作台
 
 <div align="center">
-<img src="docs/images/workbench.png" alt="SlideFlow AI 工作台" width="800"/>
+<img src="docs/images/workbench.png" alt="SlideBot AI 工作台" width="800"/>
 
 *功能丰富的工作台：选择风格、调整内容丰富度、上传录音转写*
 </div>
@@ -257,8 +257,8 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/tonyqinatcmu/SlideFlow.AI.git
-cd SlideFlow.AI
+git clone https://github.com/tonyqinatcmu/SlideBot.AI.git
+cd SlideBot.AI
 
 # 2. 安装后端依赖
 pip install -r requirements.txt
@@ -310,7 +310,7 @@ HOST=0.0.0.0
 ## 📁 项目结构
 
 ```
-slideflow/
+slidebot/
 ├── server.py              # 后端主程序（FastAPI路由）
 ├── requirements.txt       # Python 依赖
 ├── .env.example           # 环境变量示例
@@ -445,7 +445,7 @@ uvicorn server:app --host 0.0.0.0 --port 8001
 
 如果这个项目对你有帮助，请给我们一个 Star ⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideFlow.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideFlow.AI&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideBot.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideBot.AI&Date)
 
 ---
 
@@ -479,6 +479,6 @@ uvicorn server:app --host 0.0.0.0 --port 8001
 
 **用 ❤️ 打造 | Made with ❤️**
 
-[报告Bug](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [功能建议](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [讨论区](https://github.com/tonyqinatcmu/SlideFlow.AI/discussions)
+[报告Bug](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [功能建议](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [讨论区](https://github.com/tonyqinatcmu/SlideBot.AI/discussions)
 
 </div>

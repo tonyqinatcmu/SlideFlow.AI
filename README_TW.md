@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/images/logo.png" alt="SlideFlow AI Logo" width="600"/>
+<img src="docs/images/logo.png" alt="SlideBot AI Logo" width="600"/>
 
-# SlideFlow AI 2.0
+# SlideBot AI 2.0
 
 ### 智慧簡報生成平台
 
@@ -103,7 +103,7 @@
 ### 登入介面
 
 <div align="center">
-<img src="docs/images/login.png" alt="SlideFlow AI 登入介面" width="800"/>
+<img src="docs/images/login.png" alt="SlideBot AI 登入介面" width="800"/>
 
 *簡潔優雅的登入介面，支援邀請碼驗證*
 </div>
@@ -111,7 +111,7 @@
 ### 工作台
 
 <div align="center">
-<img src="docs/images/workbench.png" alt="SlideFlow AI 工作台" width="800"/>
+<img src="docs/images/workbench.png" alt="SlideBot AI 工作台" width="800"/>
 
 *功能豐富的工作台：選擇風格、調整內容豐富度、上傳錄音轉寫*
 </div>
@@ -257,8 +257,8 @@
 
 ```bash
 # 1. 複製專案
-git clone https://github.com/tonyqinatcmu/SlideFlow.AI.git
-cd SlideFlow.AI
+git clone https://github.com/tonyqinatcmu/SlideBot.AI.git
+cd SlideBot.AI
 
 # 2. 安裝後端依賴
 pip install -r requirements.txt
@@ -311,7 +311,7 @@ HOST=0.0.0.0
 ## 📁 專案結構
 
 ```
-slideflow/
+slidebot/
 ├── server.py              # 後端主程式（FastAPI路由）
 ├── requirements.txt       # Python 依賴
 ├── .env.example           # 環境變數範例
@@ -446,7 +446,7 @@ uvicorn server:app --host 0.0.0.0 --port 8001
 
 如果這個專案對你有幫助，請給我們一個 Star ⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideFlow.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideFlow.AI&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tonyqinatcmu/SlideBot.AI&type=Date)](https://star-history.com/#tonyqinatcmu/SlideBot.AI&Date)
 
 ---
 
@@ -480,6 +480,6 @@ uvicorn server:app --host 0.0.0.0 --port 8001
 
 **用 ❤️ 打造 | Made with ❤️**
 
-[回報Bug](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [功能建議](https://github.com/tonyqinatcmu/SlideFlow.AI/issues) · [討論區](https://github.com/tonyqinatcmu/SlideFlow.AI/discussions)
+[回報Bug](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [功能建議](https://github.com/tonyqinatcmu/SlideBot.AI/issues) · [討論區](https://github.com/tonyqinatcmu/SlideBot.AI/discussions)
 
 </div>
