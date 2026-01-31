@@ -1,0 +1,27 @@
+# PPT智能生成器 2.0 - Python依赖
+
+# Web框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# HTTP请求
+requests>=2.31.0
+
+# 数据验证
+pydantic>=2.5.0
+
+# 图像处理
+Pillow>=10.0.0
+
+# 异步支持
+aiofiles>=23.2.1
+python-multipart>=0.0.6
+
+# 环境变量
+python-dotenv>=1.0.0
+
+# 文档处理（2.0新增）
+PyMuPDF>=1.23.0  # PDF文本抽取
+python-docx>=1.1.0  # Word文档处理
+python-pptx>=0.6.23  # PPT文档处理
+openpyxl>=3.1.2  # Excel处理

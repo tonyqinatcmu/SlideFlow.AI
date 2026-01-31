@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="description" content="SlideFlow AI - Intelligent Presentation Generator" />
+    <title>SlideFlow AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      body { margin: 0; background: #0a1628; }
+      #root { min-height: 100vh; }
+      /* 防止加载闪烁 */
+      .loading-screen { position: fixed; inset: 0; background: #0a1628; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+      .loading-logo { animation: pulse 2s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+  </head>
+  <body>
+    <noscript>您需要启用JavaScript才能运行此应用。</noscript>
+    <div id="root"></div>
+  </body>
+</html>
