@@ -97,7 +97,7 @@ We have deployed an online demo version for you to try!
 ### Overview Introduction  
 
 <div align="center">
-<video src="https://github.com/user-attachments/assets/2a2408fd-1c7b-4d27-9364-e28e9f03f576" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/30d55221-8774-4ba9-9e70-0516a729d158" controls width="100%"></video>
 </div>
 
 ### Login Page
